@@ -4,6 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Event Registration Form</title>
+    <style>
+      /* *{
+        background-color: cornsilk;
+      } */
+      /* #festdetails{
+        color: rgb(118, 63, 24);
+      }
+      #mainevent li:nth-child(even){
+        color: steelblue;
+      }
+      #passtypes li:nth-child(odd){
+        color: navy;
+      }
+      label{
+        color: #8000804a;
+      }
+      #deadline{
+        color: red;
+      }
+      input[type="submit"]{
+        color: rgb(19, 84, 19);
+      } */
+    </style>
   </head>
   <body>
     <!--
@@ -18,7 +41,7 @@
     <header>
       <img src="task-2-banner.jpg" alt="" width="300" /><br />
       <h1>College Fest Details</h1>
-      <ul>
+      <ul id="festdetails">
         <li>Fest Name: TechnoFest 2025</li>
         <li>Date of the Event: May 12th, 2025 - May 14th, 2025</li>
         <li>
@@ -28,7 +51,7 @@
         <li>Organizers: College Fest Committee (Student Union)</li>
       </ul>
       <h2>Main Events:</h2>
-      <ul>
+      <ul id="mainevent">
         <li>
           Technical Events: Coding Challenge, Robotics Competition, Tech Quiz
         </li>
@@ -37,7 +60,7 @@
         <li>Workshops: 3D Printing, Web Development, Digital Marketing</li>
       </ul>
       <h2>Pass Types:</h2>
-      <ol>
+      <ol id="passtypes">
         <li>Silver Pass [₹500]: Basic entry to all events</li>
         <li>
           Gold Pass [₹1000]: Entry to all events + access to workshops + free
@@ -48,7 +71,7 @@
           events + meet-and-greet with speakers
         </li>
       </ol>
-      <p><mark><strong>Registration Deadline: May 5th, 2025</strong></mark></p>
+      <p><mark><strong id="deadline">Registration Deadline: May 5th, 2025</strong></mark></p>
       <h2>Contact Information:</h2>
       <ul>
         <li>Email: fest2025@xyzcollege.edu</li>
