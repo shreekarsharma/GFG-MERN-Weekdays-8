@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Box Model</title>
+    <style>
+      .parent {
+        width: 500px;
+        height: 500px;
+        color: whitesmoke;
+        background-color: teal;
+        padding: 20px;
+        padding: 20px 40px 20px 40px;
+        border: 5px dotted black;
+        margin: 20px;
+        margin: 20px 40px 20px 40px;
+        box-sizing: content-box;
+        box-sizing: border-box;
+      }
+      /* Total height of element */
+      /* total height = padding top + border top + padding bottom + border bottom + content */
+      /* total width = padding left + border left + padding right + boder right + content */
+    </style>
+  </head>
+  <body>
+    <div class="parent">This is a div</div>
+  </body>
+</html>
