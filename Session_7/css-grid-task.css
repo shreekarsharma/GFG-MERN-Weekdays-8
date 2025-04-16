@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: #38598b;
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "brandname navbar navbar navbar"
+    "logo1 breakingnews breakingnews ad3"
+    "ad2 breakingnews breakingnews ad3"
+    "writerpost writerpost writerpost writerpost"
+    "footer footer logo2 logo3";
+}
+.box{
+    background: #113f67;
+    color: #e7eaf6;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2.5px solid #a2a8d3;
+}
+.brandname {
+  grid-area: brandname;
+}
+.navbar {
+  grid-area: navbar;
+}
+.logo1 {
+  grid-area: logo1;
+}
+.logo2 {
+  grid-area: logo2;
+}
+.logo3 {
+  grid-area: logo3;
+}
+.ad2 {
+  grid-area: ad2;
+}
+.ad3 {
+  grid-area: ad3;
+}
+.breakingnews {
+  grid-area: breakingnews;
+}
+.writerpost {
+  grid-area: writerpost;
+}
+.footer {
+  grid-area: footer;
+}
