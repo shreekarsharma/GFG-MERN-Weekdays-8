@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 98.5vw;
+  height: 96vh;
+  background-color: whitesmoke;
+  display: grid;
+  gap: 10px;
+  grid-template-areas:  "box1 box1 box6 box7 box10 box10 box10"
+                        "box1 box1 box6 box8 box11 box12 box12"
+                        "box2 box3 box6 box8 box13 box13 box13"
+                        "box2 box4 box9 box9 box13 box13 box13"
+                        "box2 box4 box9 box9 box13 box13 box13"
+                        "box5 box5 box9 box9 box14 box14 box14";
+  margin: 10px;
+}
+.box{
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+}
+.box1 {
+  grid-area: box1;
+  background-color: #5E1675;
+}
+.box2 {
+  grid-area: box2;
+  background-color: #337357;
+}
+.box3 {
+  grid-area: box3;
+  background-color: #FFD23F;
+}
+.box4 {
+  grid-area: box4;
+  background-color: #EE4266;
+}
+.box5 {
+  grid-area: box5;
+  background-color: #337357;
+}
+.box6 {
+  grid-area: box6;
+  background-color: #337357;
+}
+.box7 {
+  grid-area: box7;
+  background-color: #FFD23F;
+}
+.box8 {
+  grid-area: box8;
+  background-color: #EE4266;
+}
+.box9 {
+  grid-area: box9;
+  background-color: #5E1675;
+}
+.box10 {
+  grid-area: box10;
+  background-color: #337357;
+}
+.box11 {
+  grid-area: box11;
+  background-color: #FFD23F;
+}
+.box12 {
+  grid-area: box12;
+  background-color: #EE4266;
+}
+.box13 {
+  grid-area: box13;
+  background-color: #5E1675;
+}
+.box14 {
+  grid-area: box14;
+  background-color: #FFD23F;
+}
