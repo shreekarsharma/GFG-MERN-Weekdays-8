@@ -9,7 +9,7 @@ function sum(a, b) {
   console.log(a);
   return a + b;
 }
-var d = "vikas";
+var d = "shreekar";
 var res = sum(10, 20);
 console.log(res);
 console.log(a);
