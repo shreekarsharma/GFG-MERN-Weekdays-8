@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <h1>DOM</h1>
+    <p>Document Object Model</p>
+    <p>DOM is a programming interface for web documents.</p>
+    <p>It represents the structure of a document as a tree of objects.</p>
+    <p>Each object corresponds to a part of the document.</p>
+    <p>DOM allows programming languages to manipulate the document.</p>
+    <p>It provides a way to access and modify the content, structure, and style of a document.</p>
+    <p>DOM is language-agnostic, but most commonly used with JavaScript.</p>
+    <p>DOM is a W3C standard.</p>
+    <p>DOM is supported by all modern browsers.</p>
+    <p>DOM is a core technology of the web.</p>
+    <p>DOM is used to create dynamic web pages.</p>
+    <script>
+      // Select an element
+      let h1El = document.querySelector("h1");
+      console.log(h1El); // <h1>DOM</h1>
+      // Change the content of an element
+      h1El.innerHTML = "DOM Manipulation";
+      console.log(h1El); // <h1>DOM Manipulation</h1>
+      // Change the style of an element
+      h1El.style.color = "red";
+      console.log(h1El); // <h1 style="color: red;">DOM Manipulation</h1>
+      // Change the class of an element
+      h1El.className = "title";
+      console.log(h1El); // <h1 class="title">DOM Manipulation</h1>
+      // Change the id of an element
+      h1El.id = "main-title";
+      console.log(h1El); // <h1 id="main-title">DOM Manipulation</h1>
+      // Change the attribute of an element
+      h1El.setAttribute("data-title", "DOM Manipulation");
+      console.log(h1El); // <h1 id="main-title" data-title="DOM Manipulation">DOM Manipulation</h1>
+      // Remove an element
+      let pEl = document.querySelector("p");
+      console.log(pEl); // <p>Document Object Model</p>
+      pEl.remove();
+      console.log(pEl); // null
+      // Create a new element
+      let bodyEl = document.querySelector("body");
+      let container = document.createElement("div");
+      bodyEl.appendChild(container);
+      bodyEl.removeChild(container);
+    </script>
+  </body>
+</html>
